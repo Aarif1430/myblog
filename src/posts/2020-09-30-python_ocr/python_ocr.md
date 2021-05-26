@@ -18,4 +18,5 @@ tags:
 ## Description
 
 In this project we have used CNN for Optical Character recognition(OCR). I have created a web interface where user can write a character and predicted value is show in same window.<br></br>
+
 The link for source code is availabe at [Python OCR](https://github.com/Aarif1430/python-ocr)
