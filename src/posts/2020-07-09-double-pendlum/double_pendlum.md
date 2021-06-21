@@ -5,7 +5,7 @@ dateModified: "2020-07-06"
 dateUpdated: "2020-07-06"
 title: "Chaos system using double pendlum experiment"
 author: "Aarif Malik"
-description: "Chaotic system is exteremely sensitive to initial conditions. A chaotic system is not actually random "
+description: "Chaos is a tricky thing to define. Chaotic system is exteremely sensitive to initial conditions. chaotic systems are distinguished by sensitive dependence on initial conditions."
 category: "Nature"
 featured: "./images/pendlum.png"
 tags:
