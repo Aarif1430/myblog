@@ -1,8 +1,8 @@
 ---
 path: "/basics_of_neural_networks"
-datePublished: "2020-06-16"
-dateModified: "2020-06-16"
-dateUpdated: "2020-06-16"
+datePublished: "2021-06-21"
+dateModified: "2021-06-21"
+dateUpdated: "2021-06-21"
 title: "Probability and Statistics, Understanding probability and statistics concepts for machine learning"
 author: "Aarif Malik"
 category: "Machine Learning"
