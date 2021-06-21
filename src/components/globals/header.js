@@ -1,58 +1,58 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState, useEffect, useRef } from "react";
 
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 //import logo from "../../images/ibaslogic_logo.svg"
-import logo from "../../images/logo.png"
+import logo from "../../images/logo.png";
 // header styles
-import headerStyles from "./header.module.scss"
-import Helmet from "react-helmet"
+import headerStyles from "./header.module.scss";
+import Helmet from "react-helmet";
 
 const Header = () => {
-  const node = useRef()
-  const [navbarOpen, setNavbarOpen] = useState(false)
+  const node = useRef();
+  const [navbarOpen, setNavbarOpen] = useState(false);
   const [links] = useState([
     {
       id: 1,
       path: "/",
-      text: "home"
+      text: "home",
     },
     {
       id: 2,
       path: "/blog/",
-      text: "blog"
+      text: "blog",
     },
     {
       id: 3,
       path: "https://teespring.com/stores/epoweriotatheta",
       text: "store",
-      target: "_blank"
+      target: "_blank",
     },
 
     {
       id: 4,
       path: "/about/",
-      text: "about"
-    }
-  ])
+      text: "about",
+    },
+  ]);
 
   const handleToggle = () => {
-    setNavbarOpen(!navbarOpen)
-  }
+    setNavbarOpen(!navbarOpen);
+  };
 
-  const handleClick = e => {
+  const handleClick = (e) => {
     if (node.current.contains(e.target)) {
-      return
+      return;
     }
-    setNavbarOpen(false)
-  }
+    setNavbarOpen(false);
+  };
 
   useEffect(() => {
     // add when mounted
-    document.addEventListener("mousedown", handleClick) // return function to be called when unmounted
+    document.addEventListener("mousedown", handleClick); // return function to be called when unmounted
     return () => {
-      document.removeEventListener("mousedown", handleClick)
-    }
-  }, [])
+      document.removeEventListener("mousedown", handleClick);
+    };
+  }, []);
 
   return (
     <header className={headerStyles.container}>
@@ -62,7 +62,7 @@ const Header = () => {
       <div className={headerStyles.content}>
         <div className={headerStyles.brand}>
           <Link to="/" className={headerStyles.brandLink}>
-            <h2>EPOWERIOTATHETA</h2>
+            <h2 style={{ fontStyle: "italic", fontSize: 30 }}>Aarif Malik</h2>
           </Link>
         </div>
 
@@ -86,7 +86,7 @@ const Header = () => {
                 : `${headerStyles.menuNav}`
             }
           >
-            {links.map(link => {
+            {links.map((link) => {
               return (
                 <li key={link.id} className={headerStyles.navItem}>
                   <Link
@@ -97,7 +97,7 @@ const Header = () => {
                     {link.text}
                   </Link>
                 </li>
-              )
+              );
             })}
           </ul>
         </nav>
@@ -110,7 +110,7 @@ const Header = () => {
         }
       ></div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
